@@ -1,536 +1,525 @@
 \documentclass{scrartcl}
 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{times}
 \usepackage{geometry}
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \usepackage{hyperref}
-\usepackage{longtable}
-\usepackage{array,booktabs,enumitem}% http://ctan.org/pkg/{array,booktabs,enumitem}
-\usepackage{datetime}
-\pagestyle{fancy} 
+\usepackage{enumitem}
+\usepackage{microtype}
+
+% Version number
+\def\version{0.1}
+
 \geometry{letterpaper,margin=1in}
-\newcolumntype{P}[1]{>{\endgraf\vspace*{-\baselineskip}}p{#1}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}
+\setlist{nosep,leftmargin=*}
+\hypersetup{hidelinks,pdfauthor={CSU, Chico Computer Science Department},pdftitle={Department Constitution and Bylaws}}
 
-%Version Number
-\def\version{1.5}
-\newcommand{\ts}{\textsuperscript}
-
-\newlist{todolist}{itemize}{2}
-\setlist[todolist]{label=$\square$}
-
-\title{California State University, Chico\\Computer Science Department\\RTP Standards}
+\title{California State University, Chico\\Computer Science Department\\Constitution and Bylaws}
 \subtitle{Version \version}
+\date{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\fontsize{8}{10}\selectfont CSU, Chico Computer Science Department Constitution and Bylaws}
+\fancyhead[R]{\fontsize{8}{10}\selectfont Version \version\\Page \thepage\ of \pageref{LastPage}}
 
 \begin{document}
-\fancyhead{}\fancyfoot{}
-\begin{titlepage}
-\clearpage\maketitle
-\thispagestyle{empty}
 
+\begin{titlepage}
+\clearpage
+\maketitle
+\thispagestyle{empty}
 \end{titlepage}
 
-
-
-\fancypagestyle{firststyle}
-{
-   \fancyfoot[L]{\fontsize{8}{12} \selectfont Standards must be compliant with the CBA and the FPPP.  Conflicts between these standards and the CBA or the FPPP will be resolved pursuant to the CBA and then FPPP.}
-}
-\fancyhead[L]{\fontsize{8}{12} \selectfont CSU, Chico Computer Science Department RTP Standards, Page \thepage\ of \pageref{LastPage}}
-\fancyhead[R]{\fontsize{8}{12} \selectfont Revised and Approved: Friday 18\ts{th} August, 2023\\ v\version}
-
-\setlength{\parindent}{0pt}
-
 \tableofcontents
+\clearpage
 
-\pagebreak
+\section*{SECTION I PURPOSE (Sam)}
+\addcontentsline{toc}{section}{SECTION I PURPOSE (Sam)}
 
-\section{OVERVIEW}
 
-The university standards for retention, tenure, and promotion (RTP) are governed by the Faculty Personnel Policies and Procedures (FPPP), which are updated annually. For the latest version of the FPPP, go to our campus Office of Academic Personnel (OAPL) website at \href{https://www.csuchico.edu/oapl/fppp.shtml}{https://www.csuchico.edu/oapl/fppp.shtml}
-\\\\
-From the FPPP: “Three areas of evaluation must be considered at all review levels in making recommendations on retention, tenure, and promotion (RTP): Instruction; Professional Growth and Achievement; and Service that contributes to the Strategic Plans and Goals of the Department/Unit, College, and University and to the Community.” This document seeks to clarify those areas of evaluation for all faculty of the Department of Computer Science.
+The Department of Computer Science Constitution and Bylaws have been developed in accordance with the University’s Personnel Policies and Procedures (FPPP) and the Collective Bargaining Agreement (CBA). The section outlines standards, policies, and procedures that consider the unique qualities and needs of the Department of Computer Science as a professional program within the University.
 
- \thispagestyle{firststyle}
+All faculty members must contribute to developing the department and its programs. The tasks and duties around these responsibilities will be given significant weight in the retention, tenure and promotion process.
 
-\section{DEPARTMENT STANDARDS FOR TENURED AND TENURE-TRACK FACULTY }
+\section*{SECTION II DEPARTMENT MEMBERSHIP}
+\addcontentsline{toc}{section}{SECTION II DEPARTMENT MEMBERSHIP}
 
-One of the most striking features of a faculty position in a comprehensive university is its multidimensionality. Teaching, scholarship, and service are critical components of every faculty member’s job. The mission statement of CSU, Chico affirms the importance of instruction, research, and public service. New hires to tenure-track positions in the Department of Computer Science shall be aware of the many facets of their position and the expectations of the university, college, and department.
-\\\\
-In addition to the general requirements of the FPPP, the Computer Science candidate for retention, tenure, or promotion must meet one of the following requirements in the field of computing:
+
+Membership shall be awarded in the following categories:
 
 \begin{enumerate}
-\item a doctorate in an appropriate discipline; or
-\item a graduate degree in Computer Science, and a significant professional career and/or a national or international reputation as an expert in the field.
+\item All tenured or tenure-track professors (assistant professors, associate professors, and full professors) holding at least half-time appointments in the Department.
+\item Lecturer membership shall be awarded to all adjunct faculty and lecturers holding appointments in the Department, including retired lecturers with concurrent teaching assignments.
+\item Retired faculty membership shall be granted to all Emeritus faculty and those within the Faculty Early Retirement Program (FERP).
+\item Staff membership shall be granted to all non-teaching staff holding appointments of 10/12 or greater in the Department.
 \end{enumerate}
 
-Any exceptions to these requirements and the timetable for meeting the requirements as they relate to retention, tenure, and/or promotion will be spelled out in the hiring letter.
-\\\\
-The following standards are those required by the department for retention, tenure, and promotion. Reports at all levels of review shall indicate whether or not progress toward retention, tenure, and/or promotion is satisfactory, and if not, what corrective action or additional accomplishment is required.
+Membership in the Department of Computer Science shall not lapse because of sabbatical leave or any other approved leave of absence.
+
+\section*{SECTION III STANDING, AD HOC, AND OTHER DEPARTMENTAL COMMITTEES}
+\addcontentsline{toc}{section}{SECTION III STANDING, AD HOC, AND OTHER DEPARTMENTAL COMMITTEES}
 
 
-\subsection{ADDITIONAL REQUIREMENTS FOR PROMOTION}
+\textbf{Section 1.} Committees of the whole are preferred. When a committee of the whole is deemed appropriate by the Department of Computer Science members and a smaller committee is formed, all interested and eligible members should be encouraged to stand for election. The election of committee members shall be by a simple majority vote.
 
-In order for a candidate to be considered for promotion to the rank of Associate Professor, the individual shall normally possess tenure or be awarded tenure simultaneous to promotion. In order for a candidate to be considered for promotion to the rank of Professor, the individual shall possess tenure or be awarded tenure simultaneous to the promotion.
-\\\\
-Candidates for promotion to the rank of Associate Professor and Full Professor shall have demonstrated both achievement and potential for growth in each of the areas of evaluation; in addition, candidates for promotion to Professor must also clearly demonstrate substantial professional recognition at and/or beyond the University itself.
-\\\\
-To evaluate faculty for RTP purposes, the department will use the following rubrics for each of the three areas of evaluation.
+\textbf{Section 2.} Each committee shall make its recommendations and reports to the Department of Computer Science unless specifically directed to report to the Department Chair.
 
-\subsection{INSTRUCTION}
-Instructional effectiveness is the primary and indispensable requirement for retention, tenure, and ultimately, promotion. When assessing a faculty member’s instruction, both quantity and quality shall be considered. Each instructional category shall be classified according to its quality:
+\textbf{Section 3.} Each committee shall meet at the call of its chair if one is elected when it is formed. The Department Chair will call the first meeting if no chair has been selected. A chair will be elected at the first meeting if one does not already exist.
+
+\textbf{Section 4.} Each committee will conduct its business according to the rules established by the Department when the committee is formed. If the Department establishes no such rules, the committee will conduct its business according to the rules agreed to by the committee members.
+
+\textbf{Section 5.} Standing committees such as CSCI Curriculum, CINS Curriculum, Graduate Curriculum, Assessment, etc., may only be formed by a two-thirds vote of the Department.
+
+\textbf{Section 6.} Ad Hoc Committees such as Search/Hiring, Textbook, and Student Recruitment may be formed by a simple majority vote.
+
+\textbf{Section 7.} The chair of a standing committee, even when it is a committee of the whole, need not be the Department Chair.
+
+\textbf{Section 8.} The term for each committee member will be one year unless it is decided otherwise by majority vote of the Department.
+
+\textbf{Section 9.} Members of committees may be recalled by a two-thirds vote of the Department.
+
+\section*{SECTION IV HIRING}
+\addcontentsline{toc}{section}{SECTION IV HIRING}
+
+
+\subsection*{A. Tenure Track (Probationary) Faculty}
+\addcontentsline{toc}{subsection}{A. Tenure Track (Probationary) Faculty}
+
+
+\begin{enumerate}
+\item Equivalency Qualifications (Provost approval required)
+\item Procedures
+\item Service Credit
+\end{enumerate}
+
+\subsection*{B. Temporary Faculty}
+\addcontentsline{toc}{subsection}{B. Temporary Faculty}
+
+
+\begin{enumerate}
+\item Rationale for Temporary Appointments
+\item Appointment Procedures
+\item University Appointment Standards for Lecturer Ranges
+\end{enumerate}
+
+\section*{SECTION V MEETINGS}
+\addcontentsline{toc}{section}{SECTION V MEETINGS}
+
+
+\begin{enumerate}
+\item Departmental Meetings
+
+\begin{enumerate}
+\item Departmental meetings will be held weekly during the fall and spring semesters, with the exception of finals week.
+\item Departmental meetings during the fall and spring semesters will be held on Wednesdays at 2:00 pm.
+\begin{enumerate}[label=\alph*.]
+\item The department chair will ensure no faculty are scheduled during this time.
+\end{enumerate}
+\item As scheduled by the department chair, a departmental meeting will be held the week before the start of the fall and spring semesters. Typically, this meeting will occur on the same day as the College Semester Kick-off Meeting.
+\item The department's administrative support coordinator (ASC) will take minutes for every departmental meeting.
+\begin{enumerate}[label=\alph*.]
+\item In the absence of the ASC, minutes will be recorded by another department member in attendance appointed by the department chair.
+\end{enumerate}
+\item The department’s ASC will maintain minutes for 5 full academic years.
+\item Additional or special departmental meetings can be scheduled as needed.
+\item The department chair sets the agenda for every department meeting.
+\begin{enumerate}[label=\alph*.]
+\item Committee chairs will be given the opportunity to introduce items onto the agenda pertaining to their specific committee
+\item All department members will be given the opportunity to introduce items onto the agenda that pertain to the department as a whole and are not under the purview of a standing committee.
+
+\end{enumerate}
+\end{enumerate}
+\item Committee Meetings
+
+\begin{enumerate}
+\item Committee meetings will be held as needed as determined by the committee chair.
+\item Committee meetings will meet only during the fall and spring semesters.
+\item Committee meetings will be held on Mondays at 2:00 pm.
+\begin{enumerate}[label=\alph*.]
+\item The department chair will ensure no faculty are scheduled during this time.
+\end{enumerate}
+\item The chair or appointed committee member will take minutes for every meeting.
+\item The committee chair will maintain minutes for 3 full academic years.
+\end{enumerate}
+\end{enumerate}
+
+\section*{SECTION VI VOTING}
+\addcontentsline{toc}{section}{SECTION VI VOTING}
+
+
+\paragraph{A. Tenure, Tenure Track, and FERP Faculty}
+
+
+\begin{enumerate}
+\item All tenured and tenure-track faculty have the right to vote.
+\item Personnel with a right to vote have the right to a proxy.
+
+\end{enumerate}
+\paragraph{B. Lecturer Faculty}
+
+
+\begin{enumerate}
+\item All lecturer faculty with a current teaching assignment can vote for Department Chair elections.
+\item Lecturer faculty who hold a teaching assignment of 6 WTUS or more have the right to a vote in all other matters not outlined in Section VI.B.1
+
+\end{enumerate}
+\paragraph{C. Staff Members}
+
+
+\begin{enumerate}
+\item Non-teaching staff members holding appointments of 10/12 or greater in the department have the right to vote for Department Chair elections.
+\item Non-teaching staff members, regardless of appointment length, do not have the right to vote, with the exception of rights outlined in Section VI.C.1.
+\item Staff members do not have the right to a proxy.
+
+\end{enumerate}
+\paragraph{D. Voting Rights While on Leave}
+
+
+\begin{enumerate}
+\item As Section VI outlines, any department member with the right to vote retains that right when on paid leave.
+\item Any department member with the right to a vote as outlined by Section VI loses their right to a vote when on unpaid leave.
+\item As Section VI outlines, any department member has the right to a proxy. However, they lose this right when on leave.
+
+\end{enumerate}
+\paragraph{E. Voting Proxies}
+
+
+\begin{enumerate}
+\item A faculty member may only be given a proxy for at most one individual with a right to vote as defined in Section VI.
+
+\end{enumerate}
+\paragraph{F. Quorum}
+
+
+\begin{enumerate}
+\item A simple majority of the voting membership is defined in Section VI.
+\end{enumerate}
+
+\section*{SECTION VII NOMINATION AND DUTIES OF OFFICERS (Bryan)}
+\addcontentsline{toc}{section}{SECTION VII NOMINATION AND DUTIES OF OFFICERS (Bryan)}
+
+
+Chair, vice chair, graduate coordinator, lab coordinator
+
+\subsection*{Department Chair}
+\addcontentsline{toc}{subsection}{Department Chair}
+
+
+\textbf{Section 1.} The Department Chair is a member of the Department of Computer Science faculty elected to perform administrative functions and provide leadership in developing the strongest possible academic program. The duties of a department chair should be considered a full-time role.
+
+\textbf{Section 2.} The minimum responsibilities of the Department Chair are detailed in FPPP.
+
+\textbf{Section 3.} Additional responsibilities of the Department Chair include the following:
 \begin{itemize}
-\item \textbf{Major:} These demonstrate standard activities
-\item \textbf{Rare:} These are rare activities that are non-standard that require extra effort or recognition.
+\item Establish and maintain the department’s Advisory Board and its schedule of meetings
+\item Schedule and run department meetings
+\item Chair the department RTP committee or serve as chair-level review
+\item Overall responsibility for class schedule
+\item Overall responsibility for teaching assignments
+\item Overall responsibility for program accreditation
+\item Overall responsibility for advising and course substitutions
+\item Hiring of lectures
+\item Justification for tenure track positions
+\item Manage program assessment, surveys, and student learning outcomes
+\item Manage Choose Chico Day
+\item Manage Chico Preview Day
+\item Manage Alumni in the Classroom Day
+\item Direct content for the department website
+\item Oversee Internships and documentation for technical elective credit
+\item Oversee the department’s budget and spending
+\item Oversee the department’s labs and ensure lab safety
+\item Approve department equipment
+\item Oversee program curricula and catalog information
+\item Develop and oversee department marketing materials
+\item Serve as the department representative on the ECC Curriculum Committee
+\item Attend ECC Chair-Director meetings
+\item Attend University Chairs Council meetings
+\item Attend University Extended Leadership Forum (ELF) meetings
+\item Attend University MPP/Chair meetings
+\item Evaluation of department ASC
 \end{itemize}
-Each instructional activity shall be classified according to the highest criteria it meets, as described in the following table.
 
-\begin{longtable}{p{2cm}p{6cm}P{6cm}}
+\textbf{Section 4.} The following procedures will be used for selection of the Department Chair.
+\begin{enumerate}
+\item Department Chair elections are to be carried out during the last academic year of the the current term of the incumbent department chair.
+\item The Department faculty will elect a Chair nominating committee consisting of three tenured or tenure-track faculty from the Department.
+\item The committee will review the Chair selection criteria (Article VI, Section 5).
+\item The committee will present the Chair selection criteria to the Department. The The department will vote to accept or reject any proposed revisions.
+\item The committee will call for nominations for the Department Chair. One week following the call for nominations, the committee will submit to the Department the names of all qualified candidates.
+\item A forum will be held that provides the candidates an opportunity to present their candidacy to the Department with opportunities for questions and answers.
+\item The department will then elect the Chair nominee by secret ballot. In the event of a single nominee, the Department may elect by acclamation. The term of office shall be three years unless otherwise stated before balloting. Ballot procedures will conform to College practices regarding secret ballots. The nominee must receive a majority of the votes cast.
+\item The Chair nominating committee will forward the name of the elected candidate to the Dean of the College of Engineering, Computer Science \& Construction Management within ten days following this election.
+\item The Chair nominating committee will ask the Dean to forward the faculty selection with recommendation to the Provost. Appointment of the Chair will be made by the Provost as chief instructional officer. The commencement date will be negotiated by the nominee with the Dean.
+\end{enumerate}
 
-\hline
-\textbf{Category} & \textbf{Major} & \textbf{Rare}\\
-\hline
-\endhead % all the lines above this will be repeated on every page
- Instructional Design 
- & \vspace{-\baselineskip}%Major  
-  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Creates and/or revises courses.
-        \item Exhibits content knowledge.       
-        \item Prepares materials and resources that are factually correct and are at an appropriate level for the courses taught.
-    \end{itemize}
-  & %Rare
-    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Prepares significant updates to course materials to stay current with research and industry practice.
-        \item An award recognizing contribution in instructional design
-        \item Participates in designing new programs, certificates, etc. 
-    \end{itemize}\\ 
-\hline
-Instructional Delivery
- & \vspace{-\baselineskip}%Major  
-  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Demonstrates aptitude and skills that facilitate students’ engagement and learning (e.g., approachability, enthusiasm, interactive skills)
-        \item Communicates concepts effectively       
-        \item Checks for students’ understanding of the presented material
-    \end{itemize}
-  & %Rare
-    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item An award recognizing contribution in instructional delivery
-        \item Usage of a variety of evidence-based pedagogical practices
-        \item Practicing the state-of-the-art teaching strategies to maintain high level of students’ engagement
-        \item Developing innovative teaching methods
-        \item Demonstrating aptitude and skills that allow to connect with students on personal level (e.g., caring for students’ success)
+\textbf{Section 5.} Department Chair Selection Criteria
+\paragraph{A. Professional Qualifications}
 
-    \end{itemize}\\ 
-\hline
-Assessment of Student Learning
- & \vspace{-\baselineskip}%Major  
-  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Uses common approaches for assessing student learning (e.g., tests, quizzes, projects)
-        \item Provides reasonable feedback to students in relation to a class size     
-        \item Continuous improvement of assessment strategies based on \href{https://www.csuchico.edu/ir/sfot/}{SET/SFOT} and peer comments
-        \item If required by the department, participating in program assessment process
-    \end{itemize}
-  & %Rare
-    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Develops innovative tools, procedures or strategies for assessing student learning
-        \item Develops innovative procedures for meaningful and effective feedback to students
-        \item Adopt variety of successful tools and techniques from research
-     \end{itemize}\\ 
-\hline
-Commitment to diversity, equity and inclusion
- & \vspace{-\baselineskip}%Major  
-  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Helpful and available during office hours
-        \item Creating an inclusive learning environment where each student is encouraged to contribute to the learning process
-        \item Reflecting on local training, conferences, \href{https://www.csuchico.edu/fdev/homepage/flcs.shtml}{FLC}, articles, equity-gap dashboards, etc. related to \href{https://www.csuchico.edu/diversity/}{EDI}       
-    \end{itemize}
-  & %Rare
-    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Provides sustained extra office hours
-        \item Provides sustained extra tutoring sessions
-        \item Practices sustained individual approaches for struggling students
-        \item Utilizes the university’s resources to promote equity, diversity, and inclusion
-%        \item Demonstrates aptitude and skills that allow to connect with students on personal level (e.g., caring for students’ success). Evidenced by SFOT comments, personal emails from students, etc.
-        \item Attends external conference, talks, or workshops on diversity, equity and inclusion
-        \item Creates programs (workshops, research activities, camps, etc.) that promote diversity, equity and inclusion
-     \end{itemize}\\ 
-\hline
-Continuous Improvement of Teaching/ Learning process\footnote{SET/SFOT scores are less important than faculty addressing how they are continuously improving their teaching based on the feedback from students and peers.}
-& \vspace{-\baselineskip}%Major  
-  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Reflection of peer reviews and \href{https://www.csuchico.edu/ir/sfot/}{SET/SFOT} to improve teaching/learning process
-        \item Updating course materials to reflect \href{https://www.csuchico.edu/ir/sfot/}{SET/SFOT} and peer comments if necessary  
-    \end{itemize}
-  & %Rare
-    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Attending an external computer science educational conference (or workshops). Providing evidence of how this knowledge applies in their classroom.
-        \item Participation in local educational workshops, faculty learning communities, or conferences. Providing evidence of how this knowledge applies in their classroom.
-     \end{itemize}\\ 
-\hline
-Subject-area Professional growth
-& \vspace{-\baselineskip}%Major  
-  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Use of a textbook(s) or other relevant materials such as research papers, or trusted online resources to maintain subject knowledge  
-    \end{itemize}
-  & %Rare
-    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Integrate content into a course learned from expert sources:
-        		\begin{itemize}
-		\item Attending an external  subject-related
- conference
- 		\item Taking a course in subject area from a leader in the field
-		\item Having an external industry or research experience
-		\end{itemize}
-        \item Integrates state-of-the-art research and/or technologies into courses
-     \end{itemize}\\ 
-\hline
-\end{longtable}
+\begin{enumerate}
+\item The candidate should have considerable and varied experience in computer science, computer information systems, or related specialization.
+\item It is desirable that the candidate hold appropriate professional credentials in his/her field.
+\end{enumerate}
+\paragraph{B. Academic Preparation}
 
-\subsubsection{Evaluating Instruction}
+\begin{enumerate}
+\item It is highly desirable for the candidate to have at least one advanced degree with an earned doctoral degree preferred in computer science, computer information systems, or related specialization.
+\item The candidate must have considerable teaching experience in an accredited program, preferably by ABET or another recognized accreditation body. A satisfactory record of classroom teaching and course development is required.
+\item A record of significant research activities and recent publications in refereed technical journals would be considered an asset.
+\item The candidate should demonstrate the ability to remain current in his/her area of specialization.
 
-When evaluating faculty members on instruction, the preceding guidelines shall inform the ratings. Faculty members shall be rated accordingly:
-\\\\
-\textbf{Meets Expectations:} Meets expectations candidates must satisfy all major activities, over the review period.
-\\\\
-\textbf{Exceeds Expectations:} Exceeds expectations must meet expectations and have at least 3 distinct rare activities (bullet points) over the review period. At least one rare must come from the Instructional Design or Instructional Delivery activities.
+\end{enumerate}
+\paragraph{C. Administrative Ability}
 
-\subsection{PROFESSIONAL GROWTH AND ACHIEVEMENT}
+\begin{enumerate}
+\item The candidate should have the capacity to make decisions and to pursue them to conclusion.
+\item The candidate should have the ability to guide the curricular development, assessment, and accreditation of the computer science and computer information systems programs.
+\item The candidate should be able to utilize to the best advantage whatever resources are at his/her disposal. The candidate should demonstrate the ability to obtain additional resources from government and/or industrial sources.
+\item The candidate should have demonstrated administrative ability, managing and directing projects and/or personnel.
+\item The candidate should be able to attract and maintain a highly qualified faculty.
+\item The candidate should be capable of initiating adequate budget proposals and making effective use of funds allocated to the department.
+\item The candidate should be capable of carrying out all functions implied by the Responsibilities of Department Chairs in the FPPP.
 
-Professional growth and achievement are essential characteristics of effective instruction. It is by this means that faculty remain current in their discipline, maintain credibility with students and peers, and sustain their intellectual vitality. It is expected that the faculty member demonstrates and documents activities that contribute to his/her professional growth.
+\end{enumerate}
+\paragraph{D. General}
 
-\subsubsection{Scholarly Activities}
+\begin{enumerate}
+\item Candidates will be considered on an overall basis. A deficiency in one area may be offset by superior qualifications in other areas.
+\item The numbering of items above is not intended to imply priority order.
+\end{enumerate}
 
-Scholarship, in all its varied forms, has the common attribute of the creation of something that did not exist before which is then validated and communicated to others. Areas such as teaching and learning, and the discovery, integration or application of knowledge are all fundamental activities that constitute scholarly activities. The forms of scholarship that support professional growth and achievement in Computer Science include, but are not limited to, those listed in this section.
-\\\\
-As a field, Computer Science evolves rapidly and areas within the field do not all adhere to the same standards of publication. For example, some areas follow a convention of ordering paper authors by the significance of their contribution while other areas order authors alphabetically. Likewise, the value of journal and conference publications differs by area. When the conventions for an area of research are deviating from the expectations described in this document, the faculty member shall supplement the records of their scholarship with a self-report assessment (along with sufficient evidence) to clarify and elaborate upon the significance of their scholarship.
-Conferences or journals that are predatory in nature do not count in faculty professional growth and achievement.
-\\\\
-Both IEEE\footnote{\href{http://ieeeauthorcenter.ieee.org/publish-with-ieee/publishing-ethics/definition-of-authorship/}{http://ieeeauthorcenter.ieee.org/publish-with-ieee/publishing-ethics/definition-of-authorship/}} and ACM\footnote{\href{https://www.acm.org/publications/policies/authorship}{https://www.acm.org/publications/policies/authorship}} require authors and co-authors to have made significant contributions to the intellectual merits of the scholarship as well as to the paper. Consequently, author orders on papers at venues sponsored by IEEE or ACM shall not impact the judgment of the quality of the faculty member’s contribution. For other venues, evidence should be provided by the faculty member to attest to the significance of their authorship by the standards of that venue.
-\\\\
-The Association for Computing Machinery (ACM) and the Institute of Electrical and Electronics Engineers (IEEE) are the leading professional and scholarly organizations for Computer Science. Conference papers and journals that are sponsored by ACM and/or IEEE are considered very high quality. In Computer Science, ACM and IEEE conference papers are peer-reviewed as complete papers (not just abstracts), published in conference proceedings, and are considered comparable quality to refereed journal articles. Both ACM Digital Library and IEEE Xplore include archived publications that are not from their respective venues; consequently, a publication’s presence in these databases alone does not necessarily evidence that the paper was published in an ACM or IEEE sponsored publication.
-\\\\
-Computer Science is conducive to interdisciplinary scholarship that can yield quality publications that are not affiliated with either ACM or IEEE. When faculty publish in other venues, it is especially important to provide resources that demonstrate the standard practices of that particular discipline as well as the quality of the publication. For example, expectations for ordering authors may be cited in documentation from publishers or professional organizations.
-\\\\
-When assessing a faculty member’s professional growth and achievement, both quantity and quality shall be considered. Each professional growth and achievement outcome can be classified as a primary or supplementary outcome. The primary category shall be further classified according to its quality as follows:
+\textbf{Section 6.} The Department Chair term will be a three-year appointment.
+
+\textbf{Section 7.} The Department Chair may be recalled by a two-thirds vote.
+
+\subsection*{The Department Vice-Chair}
+\addcontentsline{toc}{subsection}{The Department Vice-Chair}
+
+
+\textbf{Section 1.} At the Department Chair's discretion, the Department Chair's position may be split to include the position of Department Vice-Chair. This would result in a quarter-time Vice-Chair and three-quarter Department Chair unless a larger split is agreed upon.
+
+\textbf{Section 2.} The Department Vice-Chair is a member of the faculty of the Department of Computer Science who is nominated by the Department Chair.
+
+\textbf{Section 3.} The Vice-Chair nominee must satisfy the selection criteria described for the Department Chair in Article VI, Section 5. The Vice-Chair nominee must be approved by the Department vote.
+
+\textbf{Section 4.} The Department Chair will forward the name of the elected Vice-Chair to the Dean of the College of Engineering, Computer Science \& Construction Management by the Department Chair within ten days following this election.
+
+\textbf{Section 5.} The Department Chair will ask the Dean to forward the Vice-Chair selection with a recommendation to the Provost. Appointment of the Vice-Chair will be made by the Provost as chief instructional officer. The date of the commencement will be negotiated by the Vice-Chair with the Dean.
+
+\textbf{Section 6.} The Vice-Chair and Department Chair must agree on a division of the responsibilities described in Article VI, Sections 1-3.
+
+\textbf{Section 7.} The Vice-Chair term will be a one-year appointment, renewable at the Department Chair’s discretion.
+
+\textbf{Section 8.} The Department Vice-Chair may be recalled by a two-thirds vote.
+
+\subsection*{Graduate Coordinator and Online Graduate Coordinator}
+\addcontentsline{toc}{subsection}{Graduate Coordinator and Online Graduate Coordinator}
+
+
+\textbf{Section 1.} At the Department Chair's discretion, the Department may appoint a graduate coordinator. This would be a half-time appointment. The Department Chair will appoint a graduate coordinator for in-person and online graduate programs. These are separate roles that oversee these two separate programs.
+
+\textbf{Section 2.} The Department Graduate Coordinator is a member of the Department of Computer Science faculty nominated by the Department Chair.
+
+\textbf{Section 3.} The Graduate Coordinator nominee must satisfy the selection criteria described for the Department Chair in Article VI, Section 5. The Graduate Coordinator nominee must be approved by the Department vote.
+
+\textbf{Section 4.} The Department Chair will forward the name of the elected Graduate Coordinator to the Dean of the College of Engineering, Computer Science \& Construction Management by the Department Chair within ten days following this election.
+
+\textbf{Section 5.} The Department Chair will ask the Dean to forward the Graduate Coordinator selection with a recommendation to the Provost. Appointment of the Graduate Coordinator will be made by the Provost as chief instructional officer. The date of the commencement will be negotiated by the Graduate Coordinator with the Dean.
+
+\textbf{Section 6.} The Graduate Coordinator will be responsible for:
+
 \begin{itemize}
-\item \textbf{Major:} These outcomes demonstrate significant accomplishments with rigorous external validation.
-\item \textbf{Rare:} These outcomes are rare accomplishments that exceed expectations by earning acknowledgment of quality among the highest in the field.
+\item Reviewing applications of students who have applied to the program
+\item Determining which portion of students should be accepted in communication with the Department Chair of acceptance number to target.
+\item Writing acceptance letters and prerequisite requirements incoming students will need to satisfy to be classified.
+\item Advising current graduate students and approving their course programs.
+\item The online graduate coordinator will schedule the courses offered and find faculty to teach them for every cohort or session.
 \end{itemize}
-Each primary outcome shall be classified according to the highest criteria it meets, as described in the following table.
 
-\begin{longtable}{p{2cm}p{6cm}P{6cm}}
+\textbf{Section 7.} The Graduate Coordinator term will be a one-year appointment, renewable at the Department Chair’s discretion.
 
-\hline
-& \multicolumn{2}{c}{\textbf{Primary Outcome Quality Classification Criteria}}\\
-\textbf{Category} & \textbf{Major} & \textbf{Rare}\\
-\hline
-\endhead % all the lines above this will be repeated on every page
-Refereed Publications
- & %Major  
-  Any peer-reviewed publication with venue corresponding acceptance rate\footnote{Acceptance rate of the venue during the same year the faculty member’s paper was accepted} below 60\% 
-  & %Rare
-  Venue with a corresponding
-acceptance rate below 25\%\\
-& -OR- & -OR- \\
- & IEEE or ACM-sponsored publication & Article in a journal that is
-prestigious in the research area. Candidate must provide evidence of why this venue is prestigious.\\
-& -OR- & -OR- \\
-  & Article in a journal with SJR Impact Factor\footnote{Scimago Journal and Country Rank: \href{http://www.scimagojr.com/}{http://www.scimagojr.com/}} at least 0.5 & Publication with at least 20 citations\footnote{Citation count excludes “self-citations” (cited by the same faculty member in a different paper)} \\
-  & -OR- & \\
-& Publication with at least 2 citations\footnote{Citation count excludes “self-citations” (cited by the same faculty member in a different paper)} & \\
-& -OR- & \\
-& A peer-reviewed publication in non-predatory venue & \\
-\hline
-External\footnote{External grants/contracts include any with funding sources other than California State University, Chico} Grants or Contracts & %Major  
-  Role in an awarded grant/contract for at least \$10k
-  & %Rare
-  PI/Co-PI on awarded grant of at least \$100k overall budget \\
-\hline
-Textbooks
-& %Major  
-  Chapter published by a university press
-  & %Rare
-  Textbook published by a university press \\
-  
-  & -OR- & -OR-\\
-  & Publicly available textbook or textbook chapter with evidence of adoption outside of CSU Chico by an accredited university & Significant adoption and use of textbook, as demonstrated by evidence provided by the candidate \\
-  
-   & -OR- & \\
-    & Letter of support from an external expert in the subject of the textbook who evaluates it as
-high-quality & \\
-\hline
+\textbf{Section 8.} The Department Graduate Coordinator may be recalled by a two-thirds vote.
 
-\end{longtable}
+\subsection*{Lab Coordinator}
+\addcontentsline{toc}{subsection}{Lab Coordinator}
 
-Supplementary activities shall each be assessed as equivalent value to a fraction of a major primary outcome. Accordingly, multiple supplementary activities may accumulate to the equivalent value of major primary outcomes. However, no number of supplementary activities shall count as equivalent to rare primary outcomes. The following table summarizes the fractional value of each supplementary activity:
 
-\begin{longtable}{p{12cm}p{2cm}}
+\textbf{Section 1.} At the Department Chair's discretion, the Department may appoint a Lab Coordinator. This would be a quarter-time appointment.
 
-\hline
-\textbf{Supplementary Activity} & \textbf{Major Outcome Equivalency} \\
-\hline
-\endhead % all the lines above this will be repeated on every page
-Submitting an unfunded external grant proposal of at least
-\$10K	& 0.5\\ \hline
-Role in an awarded external grant/contract for less than \$10k	& 0.5\\ \hline
-Publicly available textbook or textbook chapter written	& 0.5 \\ \hline
-Patents, inventions, and other such developments of a significant scientific or engineering nature &	0.5 \\ \hline
-Prestigious (inter)national award/recognition (e.g. ACM or IEEE Fellow)	&0.5\\ \hline
-Serving on a grant review panel	&0.5\\ \hline
-Delivering an invited talk at a conference or society meeting (e.g. keynote speaker, panel, etc)	& 0.5\\ \hline
-Conference program committee member	&0.5\\ \hline
-Editor of a journal, conference proceedings, or book	& 0.5\\ \hline
-Awarded internal grant(s)/contract(s)	 & 0.3\\ \hline
-Research awards and honors granted by professional societies, government agencies, and industry &	0.2\\ \hline
-Invited reviewer of journal articles, conference articles, chapters, or books	& 0.1\\ \hline
-Mentoring a student’s research that results in publication (that the faculty member did NOT co-author)&	0.1\\ \hline
-\end{longtable}
+\textbf{Section 2.} The Department Lab Coordinator is a member of the Department of Computer Science faculty nominated by the Department Chair.
 
-\subsubsection{Evaluating Professional Growth and Achievement}
-When evaluating faculty members on professional growth and achievement, the preceding guidelines shall inform the ratings over the review period. Faculty members shall be rated accordingly:
+\textbf{Section 3.} The Lab Coordinator nominee must satisfy the selection criteria described for the Department Chair in Article VI, Section 5. The Department must approve the Lab Coordinator nominee by vote.
 
-\begin{longtable}{p{4cm}p{5cm}P{5cm}}
+\textbf{Section 4.} The Department Chair will forward the name of the elected Lab Coordinator to the Dean of the College of Engineering, Computer Science \& Construction Management by the Department Chair within ten days following this election.
 
-\hline
-\textbf{Period of Evaluation} & \textbf{Meets Expectations} & \textbf{Exceed Expectations}\\
-\hline
-\endhead % all the lines above this will be repeated on every page
-2nd Year Probationary & At least 1 primary major outcome, that can be supplemental outcomes & At least 1 primary major outcome, not including supplemental outcomes \\ \hline
-4th Year Probationary & At least 2 primary major outcomes, that can be supplemental outcomes & At least 2 primary major outcomes, not including supplemental outcomes \\ \hline
-Tenure and/or Promotion for all levels & At least 4 primary major outcomes, of them, supplemental outcomes can only account for at most 2 equivalent primary major outcomes. & Equivalent to at least 6 primary outcomes where at least one of them is a rare outcome, and supplemental outcomes can only account for at most 2 equivalent primary major outcomes. \\ \hline
+\textbf{Section 5.} The Department Chair will ask the Dean to forward the Lab Coordinator selection with a recommendation to the Provost. The Provost, as chief instructional officer, will appoint the Lab Coordinator. The Lab Coordinator will negotiate the commencement date with the Dean.
 
-\end{longtable}
+\textbf{Section 6.} The Lab Coordinator will be responsible for:
 
-\subsection{SERVICE}
-
-When assessing a faculty member’s service, both quantity and quality shall be considered. Each service category shall be classified according to its quality:
 \begin{itemize}
-\item \textbf{Major:} These demonstrate standard activities
-\item \textbf{Rare:} These are rare activities that are non-standard that require extra effort or recognition.
+\item Interfacing with ESYS and ITSS regarding department needs involving:
+\begin{itemize}
+\item Lab machines
+\begin{itemize}
+\item Packages and dependencies needed
 \end{itemize}
-Each service activity shall be classified according to the highest criteria it meets, as described in the following table:
+\item Hosted resources
+\begin{itemize}
+\item Servers hosted in the collab space in Butte
+\item Servers hosted by ESYS in the cloud
+\item Student shared storage
+\item Remote Linux server
+\end{itemize}
+\item VPN support documentation for Linux
+\item Submitting ITPR tickets or following up on tickets submitted by other faculty
+\end{itemize}
+\item Managing department automated exercises assessment platform
+\begin{itemize}
+\item Installing updates
+\item Handling security vulnerability notifications
+\item Handling bugs identified by faculty using the program
+\item Helping get faculty setup and using the system
+\end{itemize}
+\item Managing department server resources
+\begin{itemize}
+\item Managing access to virtual server space for faculty
+\item Managing access to a coprocessor server, if the department has one, for faculty and students in courses needing it.
+\end{itemize}
+\item Serve as the chair of the department lab committee
+\end{itemize}
 
-\begin{longtable}{p{3cm}p{5.5cm}P{5.5cm}}
+\textbf{Section 7.} The Lab Coordinator term will be a one-year appointment, renewable at the Department Chair’s discretion.
 
-\hline
-\textbf{Category} & \textbf{Major} & \textbf{Rare}\\
-\hline
-\endhead % all the lines above this will be repeated on every page
- Student Advising
- & Candidate is involved in mandatory advising and other academic advising duties. %Major  
- & The candidate receives an award in recognition of advising excellence \\ 
- \hline
- Student   Recruitment, Retention, Diversity, Inclusion, and Equity efforts & Candidate is actively involved in student recruitment and retention efforts at the department level. & Candidate is actively involved in student recruitment and retention efforts beyond the department level. \\
- &
- Examples:
-	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-    \item Choose Chico Day
-    \item Sending students to Grace Hopper Celebration
-	\end{itemize}
-  & %Rare
-  Examples:
-    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item College outreach programs
-    \end{itemize}\\ 
-\hline
-Advisor or Coach for a Student Club or Organization & Candidate serves as (1) advisor for a recognized student club or organization on campus; or (2) coach for a student competition team. & N/A \\
-& Examples:
-	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-    \item UPE faculty advisor
-    \item ACM faculty advisor
-    \item USR0 faculty advisor
-    \item ICPC coach
-    \item NCL coach
+\textbf{Section 8.} The Department Lab Coordinator may be recalled by a two-thirds vote.
 
-	\end{itemize} & \\ \hline
-Committee Membership & Candidate sustains membership on a college or department-level committee. & Candidates serves on a university or system-wide committee for at least one term or year. \\
-& Examples:
-	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-    \item Serves multiple terms on the curriculum committee
-	\end{itemize} & \\ \hline
-Leadership in Committees & Candidate serves as a chair for a department-level committee. & The candidate serves as a chair for a university, college, or system-level committee. \\ \hline
-Graduate Committee Involvement & Adviser or member of an MS committee. & Adviser or member of a Ph.D. committee for a candidate at another institution.\\ 
-& & -OR- \\
-& & Advisor of at least 3 MS thesis or project during the period of evaluation \\
-\hline
- Community Outreach & Candidate is actively doing work for regional, state, or local organizations. & The candidate is actively doing work for a national or international organization. \\
- &
- Examples:
-	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-    \item Working with ECC’s McCloud Institute for Simulation Sciences.
-    \item Inspire HS Board
-    \item Boys \& Girls Club
-    \item GirlsWhoCode
-	\end{itemize}
-  & %Rare
-  Examples:
-    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item Board of Director member for NCWIT
-        \item Board of Director member for CRA
-        \item The executive committee for Boy Scouts of America
-    \end{itemize}\\ 
-\hline
- Reviewer for a Funding Agency
- & Candidate is a reviewer for a regional, local, or university-level conference or journal.%Major  
- & The candidate is a reviewer for a national or federal funding agency (e.g. NSF).\\ 
- \hline
-  Reviewer for conference or journal proceedings
- & Candidate is a reviewer for a regional, local, or
-university-level funding unit.%Major  
- & The candidate is a reviewer for
-a national or international
-conference or journal with
-reasonable quality.\\ 
- \hline
-   Editorial Work
- & Candidate serves as a member of the Editorial Board on a peer-reviewed journal or conference proceedings%Major  
- & Candidate serves as Editor or Associate Editor on a
-peer-reviewed journal or conference with high quality.
-\\ 
- \hline
- Awards & Candidate recognized with a university award for work as an advisor or for work in service organizations. & Candidate recognized with an external award for work in service organizations.\\
- &
- Examples:
-	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-    \item Chico State Outstanding Faculty Service Award
-    \item Chico State Outstanding Academic Advisor Award
-	\end{itemize}
-  & %Rare
-  Examples:
-    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-        \item ACM Distinguished Service Award
-        \item IEEE Outstanding Service Award
-    \end{itemize}\\ 
-\hline
- Participation in a Recognized National or International Professional Organization & Candidate serves as a committee member in a recognized national or international professional organization.& Candidate (1) is an elected officer such as President, VP, Secretary, Board of Trustees; or (2) serving as chair of a committee in a recognized national or international professional organization.\\
- &
- Examples such as:
-	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-    \item ACM
-    \item IEEE
-    \item ASEE
-	\end{itemize}
-  &\\ 
-\hline
- Faculty Mentorship & Candidate is actively involved in mentoring junior faculty in their home college and/or their home department.& The candidate is involved in mentoring faculty at the university level. \\
- & &
- Examples:
-	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-    \item Lead in a campus
-Faculty Learning Community
-(FLC)
-	\end{itemize}
-  \\ 
-\hline
-Leadership Role in the College & Candidate serves as Program Director or Department
-Vice-/Associate-Chair in the college.
-& The candidate previously served as Associate Dean or other university administrator. \\
-& & -OR- \\
-& & The candidate serves as a Department Chair in the college. \\
-\hline
-\end{longtable}
-
-\subsubsection{Evaluating Service}
-When evaluating faculty members on service, the preceding guidelines shall inform the ratings. Faculty members shall be rated accordingly:
-\\\\
-\textbf{Meets Expectations for tenure and/or promotion for all levels:} At least 3 separate, independent documented Major service activities, over the review period.
-\\
-\textbf{Exceeds Expectations for tenure and/or promotion to Associate:} Meets expectations and at least two rare activities over the review period.
-\\
-\textbf{Exceeds Expectations for tenure and/or promotion to Full:} Meets expectations and at least three rare activities over the review period.
-
-\subsection{RATING FACULTY PERFORMANCE}
-
-Upon scheduled performance reviews, the department review committee shall rate the faculty member on their performance for each of the three primary criteria: Instruction, Professional Growth and Achievement, and Service.
-\\\\
-It is expected that the faculty member shall maintain high technical, professional, and ethical standards in their interaction with students, colleagues, staff, administration, the community, and the profession. If this standard is not met, it needs to be addressed by the department Personnel Committee in its RTP report or recommendations along with any necessary support documentation.
-\\\\
-In addition to a faculty member’s responsibility to maintain high ethical standards, it is meaningful to recognize the importance of maintaining a demeanor of respect for, and cooperative interaction with colleagues, staff, and the administration in carrying out the mission of the university. Whether it is in connection with committee work, outreach activities, curriculum development, or program assessment, faculty are expected to function cooperatively with others to further the stature of the program, department, college, and university. If this standard is not met, it needs to be addressed by the department Personnel Committee in its RTP report or recommendations along with any necessary support documentation.
-
-\subsubsection{Rating Expectations for Tenure and/or Promotion to Associate or Full}
-To qualify for tenure and/or promotion, faculty members are expected to meet at least a rating of Meets Expectations in all three criteria: Instruction, Professional Growth and Achievement, and Service. These expectations are summarized in the table below:
-
-\begin{longtable}{p{7cm}p{7cm}}
-
-\hline
-\textbf{Category} & \textbf{Minimum Expected Rating} \\
-\hline
-\endhead % all the lines above this will be repeated on every page
-Instruction 	& Meets Expectations \\ \hline
-Professional Growth and Achievement 	& Meets Expectations \\ \hline
-Service 	& Meets Expectations \\ \hline
-\end{longtable}
-
-\subsubsection{Rating Expectations for Accelerated Tenure and/or Promotion to Associate or Full}
-To qualify for accelerated tenure and/or promotion to full or associate, faculty members are expected to show exemplary performance, demonstrated by no ratings below Exceeds Expectations.
-
-\begin{longtable}{p{7cm}p{7cm}}
-
-\hline
-\textbf{Category} & \textbf{Minimum Expected Rating} \\
-\hline
-\endhead % all the lines above this will be repeated on every page
-Instruction 	& Exceeds Expectations \\ \hline
-Professional Growth and Achievement 	& Exceeds Expectations \\ \hline
-Service 	& Exceeds Expectations \\ \hline
-\end{longtable}
-
-To qualify for accelerated tenure or promotion to associate professor, the candidate must: (1) have been rated Exceeds Expectations in a performance review in all three categories of evaluation, and (2) demonstrate the likelihood that this high level of performance will continue, and (3) have worked a minimum of one academic year under the conditions similar to the department’s typical full-time assignment.
-\\\\
-To qualify for accelerated promotion to full professor, the candidate must: (1) be ranked Exceeds Expectations in all three categories of evaluation, and (2) demonstrate the likelihood that their exceptional performance will continue, and (3) clearly demonstrate substantial professional recognition at and beyond the University itself.
+\section*{SECTION VIII ORDER OF MEETING BUSINESS: (Sam)}
+\addcontentsline{toc}{section}{SECTION VIII ORDER OF MEETING BUSINESS: (Sam)}
 
 
-\section{DEPARTMENT STANDARDS FOR LECTURER FACULTY}
-Lecturers must meet all requirements for appointment and other requirements as described in the Faculty Personnel Policies \& Procedures (\href{https://www.csuchico.edu/oapl/fppp.shtml}{FPPP}).
-\subsection{Evaluation of Lecturers}
-In alignment with our campus Faculty Personnel Policies \& Procedures (\href{https://www.csuchico.edu/oapl/fppp.shtml}{FPPP}) documents, all lecturers working with the department will be evaluated based on the following rubric:
+The Department Chair shall call meetings as the Chair deems necessary. The Department of Computer Science membership may also request meetings. Upon receiving such a request from at least two members, the Department Chair shall call a meeting within ten days.
 
-\begin{longtable}{p{3cm}p{11cm}}
+The Department Chair will make every effort to ensure that meeting times do not conflict with members' academic responsibilities.
 
-\hline
-\textbf{Category} & \textbf{Expectations for a Satisfactory Rating} \\
-\hline
-\endhead % all the lines above this will be repeated on every page
-Teaching evaluations & The candidate provided evidence of careful analysis and evaluation of Student Feedback on Teaching and Learning (SFOT) results and student comments with documented plans to address student concerns. For a satisfactory rating evidence off all of these items needs to be supported:  \\
-& 	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-    \item Prepares materials and resources that are factually correct and are at an appropriate level for the courses taught.
-    \item Demonstrates aptitude and skills that facilitate students’ engagement and learning (e.g., approachability, enthusiasm, interactive skills).
-     \item Communicates concepts effectively.
-      \item Checks for students’ understanding of the presented material
-     \end{itemize} \\
-     & \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-       \item Uses common approaches for assessing student learning (e.g., tests, quizzes, projects).
-        \item Provides reasonable feedback to students in relation to a class size
-         \item Continuous improvement of assessment strategies based on SFOT and peer comments.
-          \item Helpful and available during office hours.
-           \item Reflection of peer reviews and teaching evaluations to improve teaching/learning process.
-            \item Updates to course materials reflect teaching evaluations and comments from peer evaluations of teaching.
-	\end{itemize}
-	\\ \hline
-Currency appropriate to appointment & The candidate provided evidence of relevant activities they participated in that support and enhance currency appropriate to the candidate’s appointment. These activities may include continued education, research, scholarship, and other creative and professional activities. Evidence for satisfactory evidence of the following needs to be provided: \\
-& \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-      \item Exhibits content knowledge.
-      \item Uses textbook(s) or other relevant materials such as research papers, or trusted online resources to maintain subject knowledge.
-      \item Reflecting on local training, conferences, \href{https://www.csuchico.edu/fdev/homepage/flcs.shtml}{FLC}, articles, equity-gap dashboards, etc. related to \href{https://www.csuchico.edu/diversity/}{EDI}
-	\end{itemize}
-	\\ \hline
-	Contribution to strategic plans and goals & The candidate provided evidence of other relevant activities or achievements related to the candidate’s work assignment(s) that contribute to the Strategic Plans and Goals of the department, such as innovations in diversity, sustainability, service learning, civic engagement, and service to the North State.\\
-	
-& \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
-      \item Creates an inclusive learning environment where each student is encouraged to contribute to the learning process.
-      \item Participates in the department’s program assessment process, if applicable.
-	\end{itemize}
-	\\ \hline
-	Non-teaching work assignment(s)& The candidate provided evidence that supports achievement related to non-teaching work assignment(s). \\
-	&\\
-  \begin{Form}
-    \CheckBox[name=mycheckbox]{Check here if applicable}
-  \end{Form}& \\ \hline
+All members of the Department of Computer Science in residence will be notified of the time and agenda at least two days prior to every meeting. Minutes shall be made available to members in a timely fashion.
 
-\end{longtable}
+Meetings are preferred to be run informally, consistent with a tradition of collegiality. However, if a conflict over procedural matters persists, Robert's Rules of Order shall be the competent authority.
 
-To qualify for retention, lecturers must maintain a Satisfactory rating on at least the \textbf{Teaching Evaluations} and \textbf{Non-teaching work assignment(s)} (if applicable) categories.
-\\\\
-To qualify for a range elevation, in addition to the scheduled responsibilities indicated in the FPPP, lecturers must maintain a Satisfactory rating on the \textbf{Teaching Evaluations, Currency appropriate to the appointment, and Non-teaching work assignment(s)} (if applicable) categories. 
+Meetings where decisions are made by vote (using Robert’s Rules as necessary) require a quorum and a clear agenda item or prior motion to discuss. A departmental quorum requires a majority of members to be present, including the chair, assistant chair, and any committee chairs bringing a matter to the department for a vote.  Members may delegate their vote if they cannot be present, but must notify the chair in advance for the delegated vote to count.
+
+\section*{SECTION IX TRAVEL FUNDS (Sam)}
+\addcontentsline{toc}{section}{SECTION IX TRAVEL FUNDS (Sam)}
+
+
+Travel funds from the department professional development account may be requested by any department member using a simple Google form or similar for the purposes of professional development including:
+
+\begin{enumerate}
+\item Conference attendance, with priority for attendance where a paper is presented by the applicant or a student mentored by the applicant
+\item Training and certification courses
+\item Course and curriculum development seminars
+\item Industry advisory council activities
+\item Competition, club and society events if the sponsoring organization lacks funding (yes/no/maybe)
+\end{enumerate}
+
+\section*{SECTION X COURSE SCHEDULING: (Bryan)}
+\addcontentsline{toc}{section}{SECTION X COURSE SCHEDULING: (Bryan)}
+
+
+\paragraph{A. Academic year}
+
+\paragraph{B. Winter Intersession}
+
+\paragraph{C. Summer Session(s)}
+
+
+\section*{SECTION XI FACULTY LEAVES (Bryan)}
+\addcontentsline{toc}{section}{SECTION XI FACULTY LEAVES (Bryan)}
+
+
+\section*{SECTION XII GRADUATE PROGRAM CONSIDERATIONS: (Sam)}
+\addcontentsline{toc}{section}{SECTION XII GRADUATE PROGRAM CONSIDERATIONS: (Sam)}
+
+
+Department compliance with graduate studies
+
+Graduate studies requires all graduate programs to have a “culminating” activity in addition to required credit hours and courses for students to become graduation candidates and in the Computer Science department, this can be satisfied by:
+
+\begin{enumerate}
+\item CSCI 693 - Research Methods
+\item CSCI 699P - Research Project
+\item CSCI 699T - Thesis
+\end{enumerate}
+
+The CSCI 693 option is offered to all students as a class taught by faculty members based upon interest and assignment by the department chair.  The CSCI 699P and 699T options are based upon mutual interest between a student with a project or thesis proposal and a potential advisor/mentor. Advisors for the project or thesis option will receive 0.5 WTU for their efforts over one or two semesters based upon a proposed schedule that must be submitted no later than 1 month prior to the end of the semester prior to the start of this work.
+
+\paragraph{A. Thesis Exams}
+
+
+Graduate courses including thesis and project options must include assessment in the form of exams that can be written, oral presentations, or submitted documents and code. Generally a thesis exam is oral (by committee) and code and documentation are submitted with the written thesis to graduate studies. The thesis and project exams must meet all graduate studies requirements.
+
+All exams for all graduate courses of study should be administered by a faculty member or department member proctor and students are expected to follow all California State University academic honesty policies published for the system and the Chico campus as well as any specific course policies the instructor may have included in their syllabus.
+
+Written project and thesis work will be assessed for plagiarism using university sanctioned tools such as Turn-it-in or similar supplied by the university and all work is expected to be the original work of the thesis or project student or properly cited as required by graduate studies.  Code is likewise must be original work, but may include libraries, generated code, and code re-used as allowed by the student’s advisor, but also must be properly cited and adhere to licensing requirements.
+
+\paragraph{B. Theses and Projects}
+
+
+For CSCI 699T students electing to complete a thesis instead of CSCI 693 Research Methods or CSCI 699P Project, must submit a detailed thesis proposal during the semester before they start work for credit at least one month before the end of that semester and so that all department faculty members have ample time to review the proposal (at least two full weeks). During this time, all faculty members can raise concerns, objections, or make suggestions for improvement that require the student and advisor to respond.  The proposal, reviews, and rebuttals should be accessible to all faculty members.
+
+Thesis proposals must include an advisor and committee members from the Computer Science faculty members (as required by graduate studies) identified at the time of proposal submission. In extenuating circumstances (e.g., committee member illness) a committee member substitution can be made with approval of the current committee. All theses should be completed within two semesters of the accepted proposal, but may straddle a summer break, and in extenuating circumstances such as student illness or resource issues can be extended only if the thesis committee agrees to the extension unanimously.
+
+If a graduate student does not complete their thesis including thesis oral exam and successful submission of their written thesis to graduate studies, they can take up to one more semester to complete their work with unanimous approval by all thesis committee members.
+
+If a graduate student electing to complete a thesis does not pass their oral exam, is unable to complete the written thesis, or agrees with their advisor to drop the thesis enrollment and objective, they may still complete the graduate program in the semester following by enrolling in CSCI 693 Research Methods.
+
+\paragraph{C. Faculty Committee Composition}
+
+
+Thesis and project committees for CSCI 699P and 699T shall meet the minimum requirements of graduate studies or exceed and shall have a Computer Science department member as advisor with at least one other Computer Science department member (other members may come from outside the department with unanimous approval by the other committee members).
+
+\section*{SECTION XIII NEW FACULTY MENTORSHIP}
+\addcontentsline{toc}{section}{SECTION XIII NEW FACULTY MENTORSHIP}
+
+
+\paragraph{A. Senior faculty classroom observations by new faculty}
+
+\textbf{Purpose:} The purpose of this document is to formalize the expectations of new faculty members in respect to observing classes within the department. New faculty members may benefit personally from such observations in the following ways: (1) be exposed to different methods of instruction, (2) explore the different course offerings of the department, and (3) strengthen working relationships with colleagues in the department.
+
+\textbf{Proposed Guidelines:} Any new faculty member who is hired to the computer science department, beginning in Fall 2025, will be expected to observe two classes in the department before their first Retention, Tenure, and Promotion (RTP) performance review.
+
+They must visit two different courses taught by two different faculty members who have been with the department for longer than the newly hired faculty member. The newly hired faculty member should meet with the course instructor to debrief about their observations following the class visit. The discussion should touch on the pedagogical practices observed and how the new faculty member is adjusting to joining the department.
+
+The non-new faculty member should reach out to the new faculty member with times that would be good for a class visit.
+
+There will not be a required write-up for the observations. However, new faculty members are highly encouraged to incorporate what they learned from the experience into their Personnel Action File during the RTP process.
+
+Failure to complete these class observations will render a faculty member ineligible for "meeting  expectations" in the instructional effectiveness area of the RTP performance review, unless the department agrees to waive this expectation for a particular faculty member based on extraneous circumstances. By the 2nd year evaluation, faculty are expected to have evidence (such as email correspondence) of their scheduled class visits in order to meet expectations. There are no requirements for the 4th or 6th year evaluations, but additional visits will allow the faculty member to achieve “exceeding expectations” within the respective RTP category.
+
+\paragraph{B. Faculty Mentorship Recommendations}
+
+
+\section*{SECTION XIV ETHICS AND STANDARDS}
+\addcontentsline{toc}{section}{SECTION XIV ETHICS AND STANDARDS}
+
+
+All Department of Computer Science members must comply with the conflict of interest section as described in FPPP.
+
+All members of the Department of Computer Science must observe the Code of Ethics as described in FPPP Appendix II as well as the Executive Memorandum 09-008 regarding Nepotism.
+
+Amendments to this Constitution may be proposed by any member of the Department of Computer Science. The proposal must be seconded by another member and made available to the Department at least ten days before the vote.
+
+Amendments to this Constitution shall require approval by a two-thirds vote.
+
+\section*{SECTION XV AMENDMENTS (Bryan)}
+\addcontentsline{toc}{section}{SECTION XV AMENDMENTS (Bryan)}
+
+
+\textbf{Section 1.} Amendments to this Constitution may be proposed by any member of the Department of Computer Science. Another member must second the proposal, and the proposal must be made available to the Department at least ten days before the vote.
+
+\textbf{Section 2.} Amendments to this Constitution shall require approval by a two-thirds vote.
 
 \end{document}
