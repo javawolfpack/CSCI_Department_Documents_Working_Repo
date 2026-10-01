@@ -1,0 +1,536 @@
+\documentclass{scrartcl}
+
+\usepackage{times}
+\usepackage{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{array,booktabs,enumitem}% http://ctan.org/pkg/{array,booktabs,enumitem}
+\usepackage{datetime}
+\pagestyle{fancy} 
+\geometry{letterpaper,margin=1in}
+\newcolumntype{P}[1]{>{\endgraf\vspace*{-\baselineskip}}p{#1}}
+
+%Version Number
+\def\version{1.5}
+\newcommand{\ts}{\textsuperscript}
+
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+\title{California State University, Chico\\Computer Science Department\\RTP Standards}
+\subtitle{Version \version}
+
+\begin{document}
+\fancyhead{}\fancyfoot{}
+\begin{titlepage}
+\clearpage\maketitle
+\thispagestyle{empty}
+
+\end{titlepage}
+
+
+
+\fancypagestyle{firststyle}
+{
+   \fancyfoot[L]{\fontsize{8}{12} \selectfont Standards must be compliant with the CBA and the FPPP.  Conflicts between these standards and the CBA or the FPPP will be resolved pursuant to the CBA and then FPPP.}
+}
+\fancyhead[L]{\fontsize{8}{12} \selectfont CSU, Chico Computer Science Department RTP Standards, Page \thepage\ of \pageref{LastPage}}
+\fancyhead[R]{\fontsize{8}{12} \selectfont Revised and Approved: Friday 18\ts{th} August, 2023\\ v\version}
+
+\setlength{\parindent}{0pt}
+
+\tableofcontents
+
+\pagebreak
+
+\section{OVERVIEW}
+
+The university standards for retention, tenure, and promotion (RTP) are governed by the Faculty Personnel Policies and Procedures (FPPP), which are updated annually. For the latest version of the FPPP, go to our campus Office of Academic Personnel (OAPL) website at \href{https://www.csuchico.edu/oapl/fppp.shtml}{https://www.csuchico.edu/oapl/fppp.shtml}
+\\\\
+From the FPPP: “Three areas of evaluation must be considered at all review levels in making recommendations on retention, tenure, and promotion (RTP): Instruction; Professional Growth and Achievement; and Service that contributes to the Strategic Plans and Goals of the Department/Unit, College, and University and to the Community.” This document seeks to clarify those areas of evaluation for all faculty of the Department of Computer Science.
+
+ \thispagestyle{firststyle}
+
+\section{DEPARTMENT STANDARDS FOR TENURED AND TENURE-TRACK FACULTY }
+
+One of the most striking features of a faculty position in a comprehensive university is its multidimensionality. Teaching, scholarship, and service are critical components of every faculty member’s job. The mission statement of CSU, Chico affirms the importance of instruction, research, and public service. New hires to tenure-track positions in the Department of Computer Science shall be aware of the many facets of their position and the expectations of the university, college, and department.
+\\\\
+In addition to the general requirements of the FPPP, the Computer Science candidate for retention, tenure, or promotion must meet one of the following requirements in the field of computing:
+
+\begin{enumerate}
+\item a doctorate in an appropriate discipline; or
+\item a graduate degree in Computer Science, and a significant professional career and/or a national or international reputation as an expert in the field.
+\end{enumerate}
+
+Any exceptions to these requirements and the timetable for meeting the requirements as they relate to retention, tenure, and/or promotion will be spelled out in the hiring letter.
+\\\\
+The following standards are those required by the department for retention, tenure, and promotion. Reports at all levels of review shall indicate whether or not progress toward retention, tenure, and/or promotion is satisfactory, and if not, what corrective action or additional accomplishment is required.
+
+
+\subsection{ADDITIONAL REQUIREMENTS FOR PROMOTION}
+
+In order for a candidate to be considered for promotion to the rank of Associate Professor, the individual shall normally possess tenure or be awarded tenure simultaneous to promotion. In order for a candidate to be considered for promotion to the rank of Professor, the individual shall possess tenure or be awarded tenure simultaneous to the promotion.
+\\\\
+Candidates for promotion to the rank of Associate Professor and Full Professor shall have demonstrated both achievement and potential for growth in each of the areas of evaluation; in addition, candidates for promotion to Professor must also clearly demonstrate substantial professional recognition at and/or beyond the University itself.
+\\\\
+To evaluate faculty for RTP purposes, the department will use the following rubrics for each of the three areas of evaluation.
+
+\subsection{INSTRUCTION}
+Instructional effectiveness is the primary and indispensable requirement for retention, tenure, and ultimately, promotion. When assessing a faculty member’s instruction, both quantity and quality shall be considered. Each instructional category shall be classified according to its quality:
+\begin{itemize}
+\item \textbf{Major:} These demonstrate standard activities
+\item \textbf{Rare:} These are rare activities that are non-standard that require extra effort or recognition.
+\end{itemize}
+Each instructional activity shall be classified according to the highest criteria it meets, as described in the following table.
+
+\begin{longtable}{p{2cm}p{6cm}P{6cm}}
+
+\hline
+\textbf{Category} & \textbf{Major} & \textbf{Rare}\\
+\hline
+\endhead % all the lines above this will be repeated on every page
+ Instructional Design 
+ & \vspace{-\baselineskip}%Major  
+  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Creates and/or revises courses.
+        \item Exhibits content knowledge.       
+        \item Prepares materials and resources that are factually correct and are at an appropriate level for the courses taught.
+    \end{itemize}
+  & %Rare
+    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Prepares significant updates to course materials to stay current with research and industry practice.
+        \item An award recognizing contribution in instructional design
+        \item Participates in designing new programs, certificates, etc. 
+    \end{itemize}\\ 
+\hline
+Instructional Delivery
+ & \vspace{-\baselineskip}%Major  
+  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Demonstrates aptitude and skills that facilitate students’ engagement and learning (e.g., approachability, enthusiasm, interactive skills)
+        \item Communicates concepts effectively       
+        \item Checks for students’ understanding of the presented material
+    \end{itemize}
+  & %Rare
+    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item An award recognizing contribution in instructional delivery
+        \item Usage of a variety of evidence-based pedagogical practices
+        \item Practicing the state-of-the-art teaching strategies to maintain high level of students’ engagement
+        \item Developing innovative teaching methods
+        \item Demonstrating aptitude and skills that allow to connect with students on personal level (e.g., caring for students’ success)
+
+    \end{itemize}\\ 
+\hline
+Assessment of Student Learning
+ & \vspace{-\baselineskip}%Major  
+  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Uses common approaches for assessing student learning (e.g., tests, quizzes, projects)
+        \item Provides reasonable feedback to students in relation to a class size     
+        \item Continuous improvement of assessment strategies based on \href{https://www.csuchico.edu/ir/sfot/}{SET/SFOT} and peer comments
+        \item If required by the department, participating in program assessment process
+    \end{itemize}
+  & %Rare
+    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Develops innovative tools, procedures or strategies for assessing student learning
+        \item Develops innovative procedures for meaningful and effective feedback to students
+        \item Adopt variety of successful tools and techniques from research
+     \end{itemize}\\ 
+\hline
+Commitment to diversity, equity and inclusion
+ & \vspace{-\baselineskip}%Major  
+  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Helpful and available during office hours
+        \item Creating an inclusive learning environment where each student is encouraged to contribute to the learning process
+        \item Reflecting on local training, conferences, \href{https://www.csuchico.edu/fdev/homepage/flcs.shtml}{FLC}, articles, equity-gap dashboards, etc. related to \href{https://www.csuchico.edu/diversity/}{EDI}       
+    \end{itemize}
+  & %Rare
+    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Provides sustained extra office hours
+        \item Provides sustained extra tutoring sessions
+        \item Practices sustained individual approaches for struggling students
+        \item Utilizes the university’s resources to promote equity, diversity, and inclusion
+%        \item Demonstrates aptitude and skills that allow to connect with students on personal level (e.g., caring for students’ success). Evidenced by SFOT comments, personal emails from students, etc.
+        \item Attends external conference, talks, or workshops on diversity, equity and inclusion
+        \item Creates programs (workshops, research activities, camps, etc.) that promote diversity, equity and inclusion
+     \end{itemize}\\ 
+\hline
+Continuous Improvement of Teaching/ Learning process\footnote{SET/SFOT scores are less important than faculty addressing how they are continuously improving their teaching based on the feedback from students and peers.}
+& \vspace{-\baselineskip}%Major  
+  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Reflection of peer reviews and \href{https://www.csuchico.edu/ir/sfot/}{SET/SFOT} to improve teaching/learning process
+        \item Updating course materials to reflect \href{https://www.csuchico.edu/ir/sfot/}{SET/SFOT} and peer comments if necessary  
+    \end{itemize}
+  & %Rare
+    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Attending an external computer science educational conference (or workshops). Providing evidence of how this knowledge applies in their classroom.
+        \item Participation in local educational workshops, faculty learning communities, or conferences. Providing evidence of how this knowledge applies in their classroom.
+     \end{itemize}\\ 
+\hline
+Subject-area Professional growth
+& \vspace{-\baselineskip}%Major  
+  \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Use of a textbook(s) or other relevant materials such as research papers, or trusted online resources to maintain subject knowledge  
+    \end{itemize}
+  & %Rare
+    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Integrate content into a course learned from expert sources:
+        		\begin{itemize}
+		\item Attending an external  subject-related
+ conference
+ 		\item Taking a course in subject area from a leader in the field
+		\item Having an external industry or research experience
+		\end{itemize}
+        \item Integrates state-of-the-art research and/or technologies into courses
+     \end{itemize}\\ 
+\hline
+\end{longtable}
+
+\subsubsection{Evaluating Instruction}
+
+When evaluating faculty members on instruction, the preceding guidelines shall inform the ratings. Faculty members shall be rated accordingly:
+\\\\
+\textbf{Meets Expectations:} Meets expectations candidates must satisfy all major activities, over the review period.
+\\\\
+\textbf{Exceeds Expectations:} Exceeds expectations must meet expectations and have at least 3 distinct rare activities (bullet points) over the review period. At least one rare must come from the Instructional Design or Instructional Delivery activities.
+
+\subsection{PROFESSIONAL GROWTH AND ACHIEVEMENT}
+
+Professional growth and achievement are essential characteristics of effective instruction. It is by this means that faculty remain current in their discipline, maintain credibility with students and peers, and sustain their intellectual vitality. It is expected that the faculty member demonstrates and documents activities that contribute to his/her professional growth.
+
+\subsubsection{Scholarly Activities}
+
+Scholarship, in all its varied forms, has the common attribute of the creation of something that did not exist before which is then validated and communicated to others. Areas such as teaching and learning, and the discovery, integration or application of knowledge are all fundamental activities that constitute scholarly activities. The forms of scholarship that support professional growth and achievement in Computer Science include, but are not limited to, those listed in this section.
+\\\\
+As a field, Computer Science evolves rapidly and areas within the field do not all adhere to the same standards of publication. For example, some areas follow a convention of ordering paper authors by the significance of their contribution while other areas order authors alphabetically. Likewise, the value of journal and conference publications differs by area. When the conventions for an area of research are deviating from the expectations described in this document, the faculty member shall supplement the records of their scholarship with a self-report assessment (along with sufficient evidence) to clarify and elaborate upon the significance of their scholarship.
+Conferences or journals that are predatory in nature do not count in faculty professional growth and achievement.
+\\\\
+Both IEEE\footnote{\href{http://ieeeauthorcenter.ieee.org/publish-with-ieee/publishing-ethics/definition-of-authorship/}{http://ieeeauthorcenter.ieee.org/publish-with-ieee/publishing-ethics/definition-of-authorship/}} and ACM\footnote{\href{https://www.acm.org/publications/policies/authorship}{https://www.acm.org/publications/policies/authorship}} require authors and co-authors to have made significant contributions to the intellectual merits of the scholarship as well as to the paper. Consequently, author orders on papers at venues sponsored by IEEE or ACM shall not impact the judgment of the quality of the faculty member’s contribution. For other venues, evidence should be provided by the faculty member to attest to the significance of their authorship by the standards of that venue.
+\\\\
+The Association for Computing Machinery (ACM) and the Institute of Electrical and Electronics Engineers (IEEE) are the leading professional and scholarly organizations for Computer Science. Conference papers and journals that are sponsored by ACM and/or IEEE are considered very high quality. In Computer Science, ACM and IEEE conference papers are peer-reviewed as complete papers (not just abstracts), published in conference proceedings, and are considered comparable quality to refereed journal articles. Both ACM Digital Library and IEEE Xplore include archived publications that are not from their respective venues; consequently, a publication’s presence in these databases alone does not necessarily evidence that the paper was published in an ACM or IEEE sponsored publication.
+\\\\
+Computer Science is conducive to interdisciplinary scholarship that can yield quality publications that are not affiliated with either ACM or IEEE. When faculty publish in other venues, it is especially important to provide resources that demonstrate the standard practices of that particular discipline as well as the quality of the publication. For example, expectations for ordering authors may be cited in documentation from publishers or professional organizations.
+\\\\
+When assessing a faculty member’s professional growth and achievement, both quantity and quality shall be considered. Each professional growth and achievement outcome can be classified as a primary or supplementary outcome. The primary category shall be further classified according to its quality as follows:
+\begin{itemize}
+\item \textbf{Major:} These outcomes demonstrate significant accomplishments with rigorous external validation.
+\item \textbf{Rare:} These outcomes are rare accomplishments that exceed expectations by earning acknowledgment of quality among the highest in the field.
+\end{itemize}
+Each primary outcome shall be classified according to the highest criteria it meets, as described in the following table.
+
+\begin{longtable}{p{2cm}p{6cm}P{6cm}}
+
+\hline
+& \multicolumn{2}{c}{\textbf{Primary Outcome Quality Classification Criteria}}\\
+\textbf{Category} & \textbf{Major} & \textbf{Rare}\\
+\hline
+\endhead % all the lines above this will be repeated on every page
+Refereed Publications
+ & %Major  
+  Any peer-reviewed publication with venue corresponding acceptance rate\footnote{Acceptance rate of the venue during the same year the faculty member’s paper was accepted} below 60\% 
+  & %Rare
+  Venue with a corresponding
+acceptance rate below 25\%\\
+& -OR- & -OR- \\
+ & IEEE or ACM-sponsored publication & Article in a journal that is
+prestigious in the research area. Candidate must provide evidence of why this venue is prestigious.\\
+& -OR- & -OR- \\
+  & Article in a journal with SJR Impact Factor\footnote{Scimago Journal and Country Rank: \href{http://www.scimagojr.com/}{http://www.scimagojr.com/}} at least 0.5 & Publication with at least 20 citations\footnote{Citation count excludes “self-citations” (cited by the same faculty member in a different paper)} \\
+  & -OR- & \\
+& Publication with at least 2 citations\footnote{Citation count excludes “self-citations” (cited by the same faculty member in a different paper)} & \\
+& -OR- & \\
+& A peer-reviewed publication in non-predatory venue & \\
+\hline
+External\footnote{External grants/contracts include any with funding sources other than California State University, Chico} Grants or Contracts & %Major  
+  Role in an awarded grant/contract for at least \$10k
+  & %Rare
+  PI/Co-PI on awarded grant of at least \$100k overall budget \\
+\hline
+Textbooks
+& %Major  
+  Chapter published by a university press
+  & %Rare
+  Textbook published by a university press \\
+  
+  & -OR- & -OR-\\
+  & Publicly available textbook or textbook chapter with evidence of adoption outside of CSU Chico by an accredited university & Significant adoption and use of textbook, as demonstrated by evidence provided by the candidate \\
+  
+   & -OR- & \\
+    & Letter of support from an external expert in the subject of the textbook who evaluates it as
+high-quality & \\
+\hline
+
+\end{longtable}
+
+Supplementary activities shall each be assessed as equivalent value to a fraction of a major primary outcome. Accordingly, multiple supplementary activities may accumulate to the equivalent value of major primary outcomes. However, no number of supplementary activities shall count as equivalent to rare primary outcomes. The following table summarizes the fractional value of each supplementary activity:
+
+\begin{longtable}{p{12cm}p{2cm}}
+
+\hline
+\textbf{Supplementary Activity} & \textbf{Major Outcome Equivalency} \\
+\hline
+\endhead % all the lines above this will be repeated on every page
+Submitting an unfunded external grant proposal of at least
+\$10K	& 0.5\\ \hline
+Role in an awarded external grant/contract for less than \$10k	& 0.5\\ \hline
+Publicly available textbook or textbook chapter written	& 0.5 \\ \hline
+Patents, inventions, and other such developments of a significant scientific or engineering nature &	0.5 \\ \hline
+Prestigious (inter)national award/recognition (e.g. ACM or IEEE Fellow)	&0.5\\ \hline
+Serving on a grant review panel	&0.5\\ \hline
+Delivering an invited talk at a conference or society meeting (e.g. keynote speaker, panel, etc)	& 0.5\\ \hline
+Conference program committee member	&0.5\\ \hline
+Editor of a journal, conference proceedings, or book	& 0.5\\ \hline
+Awarded internal grant(s)/contract(s)	 & 0.3\\ \hline
+Research awards and honors granted by professional societies, government agencies, and industry &	0.2\\ \hline
+Invited reviewer of journal articles, conference articles, chapters, or books	& 0.1\\ \hline
+Mentoring a student’s research that results in publication (that the faculty member did NOT co-author)&	0.1\\ \hline
+\end{longtable}
+
+\subsubsection{Evaluating Professional Growth and Achievement}
+When evaluating faculty members on professional growth and achievement, the preceding guidelines shall inform the ratings over the review period. Faculty members shall be rated accordingly:
+
+\begin{longtable}{p{4cm}p{5cm}P{5cm}}
+
+\hline
+\textbf{Period of Evaluation} & \textbf{Meets Expectations} & \textbf{Exceed Expectations}\\
+\hline
+\endhead % all the lines above this will be repeated on every page
+2nd Year Probationary & At least 1 primary major outcome, that can be supplemental outcomes & At least 1 primary major outcome, not including supplemental outcomes \\ \hline
+4th Year Probationary & At least 2 primary major outcomes, that can be supplemental outcomes & At least 2 primary major outcomes, not including supplemental outcomes \\ \hline
+Tenure and/or Promotion for all levels & At least 4 primary major outcomes, of them, supplemental outcomes can only account for at most 2 equivalent primary major outcomes. & Equivalent to at least 6 primary outcomes where at least one of them is a rare outcome, and supplemental outcomes can only account for at most 2 equivalent primary major outcomes. \\ \hline
+
+\end{longtable}
+
+\subsection{SERVICE}
+
+When assessing a faculty member’s service, both quantity and quality shall be considered. Each service category shall be classified according to its quality:
+\begin{itemize}
+\item \textbf{Major:} These demonstrate standard activities
+\item \textbf{Rare:} These are rare activities that are non-standard that require extra effort or recognition.
+\end{itemize}
+Each service activity shall be classified according to the highest criteria it meets, as described in the following table:
+
+\begin{longtable}{p{3cm}p{5.5cm}P{5.5cm}}
+
+\hline
+\textbf{Category} & \textbf{Major} & \textbf{Rare}\\
+\hline
+\endhead % all the lines above this will be repeated on every page
+ Student Advising
+ & Candidate is involved in mandatory advising and other academic advising duties. %Major  
+ & The candidate receives an award in recognition of advising excellence \\ 
+ \hline
+ Student   Recruitment, Retention, Diversity, Inclusion, and Equity efforts & Candidate is actively involved in student recruitment and retention efforts at the department level. & Candidate is actively involved in student recruitment and retention efforts beyond the department level. \\
+ &
+ Examples:
+	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+    \item Choose Chico Day
+    \item Sending students to Grace Hopper Celebration
+	\end{itemize}
+  & %Rare
+  Examples:
+    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item College outreach programs
+    \end{itemize}\\ 
+\hline
+Advisor or Coach for a Student Club or Organization & Candidate serves as (1) advisor for a recognized student club or organization on campus; or (2) coach for a student competition team. & N/A \\
+& Examples:
+	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+    \item UPE faculty advisor
+    \item ACM faculty advisor
+    \item USR0 faculty advisor
+    \item ICPC coach
+    \item NCL coach
+
+	\end{itemize} & \\ \hline
+Committee Membership & Candidate sustains membership on a college or department-level committee. & Candidates serves on a university or system-wide committee for at least one term or year. \\
+& Examples:
+	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+    \item Serves multiple terms on the curriculum committee
+	\end{itemize} & \\ \hline
+Leadership in Committees & Candidate serves as a chair for a department-level committee. & The candidate serves as a chair for a university, college, or system-level committee. \\ \hline
+Graduate Committee Involvement & Adviser or member of an MS committee. & Adviser or member of a Ph.D. committee for a candidate at another institution.\\ 
+& & -OR- \\
+& & Advisor of at least 3 MS thesis or project during the period of evaluation \\
+\hline
+ Community Outreach & Candidate is actively doing work for regional, state, or local organizations. & The candidate is actively doing work for a national or international organization. \\
+ &
+ Examples:
+	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+    \item Working with ECC’s McCloud Institute for Simulation Sciences.
+    \item Inspire HS Board
+    \item Boys \& Girls Club
+    \item GirlsWhoCode
+	\end{itemize}
+  & %Rare
+  Examples:
+    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item Board of Director member for NCWIT
+        \item Board of Director member for CRA
+        \item The executive committee for Boy Scouts of America
+    \end{itemize}\\ 
+\hline
+ Reviewer for a Funding Agency
+ & Candidate is a reviewer for a regional, local, or university-level conference or journal.%Major  
+ & The candidate is a reviewer for a national or federal funding agency (e.g. NSF).\\ 
+ \hline
+  Reviewer for conference or journal proceedings
+ & Candidate is a reviewer for a regional, local, or
+university-level funding unit.%Major  
+ & The candidate is a reviewer for
+a national or international
+conference or journal with
+reasonable quality.\\ 
+ \hline
+   Editorial Work
+ & Candidate serves as a member of the Editorial Board on a peer-reviewed journal or conference proceedings%Major  
+ & Candidate serves as Editor or Associate Editor on a
+peer-reviewed journal or conference with high quality.
+\\ 
+ \hline
+ Awards & Candidate recognized with a university award for work as an advisor or for work in service organizations. & Candidate recognized with an external award for work in service organizations.\\
+ &
+ Examples:
+	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+    \item Chico State Outstanding Faculty Service Award
+    \item Chico State Outstanding Academic Advisor Award
+	\end{itemize}
+  & %Rare
+  Examples:
+    \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+        \item ACM Distinguished Service Award
+        \item IEEE Outstanding Service Award
+    \end{itemize}\\ 
+\hline
+ Participation in a Recognized National or International Professional Organization & Candidate serves as a committee member in a recognized national or international professional organization.& Candidate (1) is an elected officer such as President, VP, Secretary, Board of Trustees; or (2) serving as chair of a committee in a recognized national or international professional organization.\\
+ &
+ Examples such as:
+	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+    \item ACM
+    \item IEEE
+    \item ASEE
+	\end{itemize}
+  &\\ 
+\hline
+ Faculty Mentorship & Candidate is actively involved in mentoring junior faculty in their home college and/or their home department.& The candidate is involved in mentoring faculty at the university level. \\
+ & &
+ Examples:
+	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+    \item Lead in a campus
+Faculty Learning Community
+(FLC)
+	\end{itemize}
+  \\ 
+\hline
+Leadership Role in the College & Candidate serves as Program Director or Department
+Vice-/Associate-Chair in the college.
+& The candidate previously served as Associate Dean or other university administrator. \\
+& & -OR- \\
+& & The candidate serves as a Department Chair in the college. \\
+\hline
+\end{longtable}
+
+\subsubsection{Evaluating Service}
+When evaluating faculty members on service, the preceding guidelines shall inform the ratings. Faculty members shall be rated accordingly:
+\\\\
+\textbf{Meets Expectations for tenure and/or promotion for all levels:} At least 3 separate, independent documented Major service activities, over the review period.
+\\
+\textbf{Exceeds Expectations for tenure and/or promotion to Associate:} Meets expectations and at least two rare activities over the review period.
+\\
+\textbf{Exceeds Expectations for tenure and/or promotion to Full:} Meets expectations and at least three rare activities over the review period.
+
+\subsection{RATING FACULTY PERFORMANCE}
+
+Upon scheduled performance reviews, the department review committee shall rate the faculty member on their performance for each of the three primary criteria: Instruction, Professional Growth and Achievement, and Service.
+\\\\
+It is expected that the faculty member shall maintain high technical, professional, and ethical standards in their interaction with students, colleagues, staff, administration, the community, and the profession. If this standard is not met, it needs to be addressed by the department Personnel Committee in its RTP report or recommendations along with any necessary support documentation.
+\\\\
+In addition to a faculty member’s responsibility to maintain high ethical standards, it is meaningful to recognize the importance of maintaining a demeanor of respect for, and cooperative interaction with colleagues, staff, and the administration in carrying out the mission of the university. Whether it is in connection with committee work, outreach activities, curriculum development, or program assessment, faculty are expected to function cooperatively with others to further the stature of the program, department, college, and university. If this standard is not met, it needs to be addressed by the department Personnel Committee in its RTP report or recommendations along with any necessary support documentation.
+
+\subsubsection{Rating Expectations for Tenure and/or Promotion to Associate or Full}
+To qualify for tenure and/or promotion, faculty members are expected to meet at least a rating of Meets Expectations in all three criteria: Instruction, Professional Growth and Achievement, and Service. These expectations are summarized in the table below:
+
+\begin{longtable}{p{7cm}p{7cm}}
+
+\hline
+\textbf{Category} & \textbf{Minimum Expected Rating} \\
+\hline
+\endhead % all the lines above this will be repeated on every page
+Instruction 	& Meets Expectations \\ \hline
+Professional Growth and Achievement 	& Meets Expectations \\ \hline
+Service 	& Meets Expectations \\ \hline
+\end{longtable}
+
+\subsubsection{Rating Expectations for Accelerated Tenure and/or Promotion to Associate or Full}
+To qualify for accelerated tenure and/or promotion to full or associate, faculty members are expected to show exemplary performance, demonstrated by no ratings below Exceeds Expectations.
+
+\begin{longtable}{p{7cm}p{7cm}}
+
+\hline
+\textbf{Category} & \textbf{Minimum Expected Rating} \\
+\hline
+\endhead % all the lines above this will be repeated on every page
+Instruction 	& Exceeds Expectations \\ \hline
+Professional Growth and Achievement 	& Exceeds Expectations \\ \hline
+Service 	& Exceeds Expectations \\ \hline
+\end{longtable}
+
+To qualify for accelerated tenure or promotion to associate professor, the candidate must: (1) have been rated Exceeds Expectations in a performance review in all three categories of evaluation, and (2) demonstrate the likelihood that this high level of performance will continue, and (3) have worked a minimum of one academic year under the conditions similar to the department’s typical full-time assignment.
+\\\\
+To qualify for accelerated promotion to full professor, the candidate must: (1) be ranked Exceeds Expectations in all three categories of evaluation, and (2) demonstrate the likelihood that their exceptional performance will continue, and (3) clearly demonstrate substantial professional recognition at and beyond the University itself.
+
+
+\section{DEPARTMENT STANDARDS FOR LECTURER FACULTY}
+Lecturers must meet all requirements for appointment and other requirements as described in the Faculty Personnel Policies \& Procedures (\href{https://www.csuchico.edu/oapl/fppp.shtml}{FPPP}).
+\subsection{Evaluation of Lecturers}
+In alignment with our campus Faculty Personnel Policies \& Procedures (\href{https://www.csuchico.edu/oapl/fppp.shtml}{FPPP}) documents, all lecturers working with the department will be evaluated based on the following rubric:
+
+\begin{longtable}{p{3cm}p{11cm}}
+
+\hline
+\textbf{Category} & \textbf{Expectations for a Satisfactory Rating} \\
+\hline
+\endhead % all the lines above this will be repeated on every page
+Teaching evaluations & The candidate provided evidence of careful analysis and evaluation of Student Feedback on Teaching and Learning (SFOT) results and student comments with documented plans to address student concerns. For a satisfactory rating evidence off all of these items needs to be supported:  \\
+& 	\begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+    \item Prepares materials and resources that are factually correct and are at an appropriate level for the courses taught.
+    \item Demonstrates aptitude and skills that facilitate students’ engagement and learning (e.g., approachability, enthusiasm, interactive skills).
+     \item Communicates concepts effectively.
+      \item Checks for students’ understanding of the presented material
+     \end{itemize} \\
+     & \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+       \item Uses common approaches for assessing student learning (e.g., tests, quizzes, projects).
+        \item Provides reasonable feedback to students in relation to a class size
+         \item Continuous improvement of assessment strategies based on SFOT and peer comments.
+          \item Helpful and available during office hours.
+           \item Reflection of peer reviews and teaching evaluations to improve teaching/learning process.
+            \item Updates to course materials reflect teaching evaluations and comments from peer evaluations of teaching.
+	\end{itemize}
+	\\ \hline
+Currency appropriate to appointment & The candidate provided evidence of relevant activities they participated in that support and enhance currency appropriate to the candidate’s appointment. These activities may include continued education, research, scholarship, and other creative and professional activities. Evidence for satisfactory evidence of the following needs to be provided: \\
+& \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+      \item Exhibits content knowledge.
+      \item Uses textbook(s) or other relevant materials such as research papers, or trusted online resources to maintain subject knowledge.
+      \item Reflecting on local training, conferences, \href{https://www.csuchico.edu/fdev/homepage/flcs.shtml}{FLC}, articles, equity-gap dashboards, etc. related to \href{https://www.csuchico.edu/diversity/}{EDI}
+	\end{itemize}
+	\\ \hline
+	Contribution to strategic plans and goals & The candidate provided evidence of other relevant activities or achievements related to the candidate’s work assignment(s) that contribute to the Strategic Plans and Goals of the department, such as innovations in diversity, sustainability, service learning, civic engagement, and service to the North State.\\
+	
+& \begin{itemize}[noitemsep,leftmargin=*,topsep=0pt,partopsep=0pt]
+      \item Creates an inclusive learning environment where each student is encouraged to contribute to the learning process.
+      \item Participates in the department’s program assessment process, if applicable.
+	\end{itemize}
+	\\ \hline
+	Non-teaching work assignment(s)& The candidate provided evidence that supports achievement related to non-teaching work assignment(s). \\
+	&\\
+  \begin{Form}
+    \CheckBox[name=mycheckbox]{Check here if applicable}
+  \end{Form}& \\ \hline
+
+\end{longtable}
+
+To qualify for retention, lecturers must maintain a Satisfactory rating on at least the \textbf{Teaching Evaluations} and \textbf{Non-teaching work assignment(s)} (if applicable) categories.
+\\\\
+To qualify for a range elevation, in addition to the scheduled responsibilities indicated in the FPPP, lecturers must maintain a Satisfactory rating on the \textbf{Teaching Evaluations, Currency appropriate to the appointment, and Non-teaching work assignment(s)} (if applicable) categories. 
+
+\end{document}
